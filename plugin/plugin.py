@@ -28,6 +28,7 @@ class allInOne(commands.Cog):
 
     @commands.command(name="rules", aliases=['rs'])
     @commands.cooldown(1, 60, commands.BucketType.user)
+    @commands.has_role('Member')
     async def rules_cmd(self, ctx):
         await ctx.message.delete()
         await ctx.send("Please refer back to the rules located in <#718142278656327750>.")
