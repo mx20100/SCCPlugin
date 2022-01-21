@@ -1,27 +1,25 @@
 # SCCPlugin
 
 Hello there! This is the status change, verify and custom command plugin for SCC. (discord.gg/Ntw83Tr)
-This plugin was made in collaboration with xTeen#0001 from the Modmail official server.
+This plugin was made in collaboration with xTeen#0001 and Bobinator#4815 from the Modmail official server.
 Heres a command list.
 
 ## Custom Commands
-.rule 1  -  Discord Terms of Service can be found here: https://discord.com/new/terms Discord needs you to be 13 or above to join this server.
+.rules  -  Please refer back to the rules located in <#718142278656327750>.
 
-.rule 2  -  YT Terms of Service can be found here: https://www.youtube.com/static?template=terms Twitch Terms of Service can be found here: https://www.twitch.tv/p/legal/terms-of-service/
+.adrules  -  Please refer back to the advertisement rules located in <#834166540521701456>.
 
-.rule 3  -  No swearing, gory language, 18+ images or text should be posted here. This is a family friendly server and if you do that you will be punished. Don't have your status, name or profile picture say anything inappropriate. Please have ping-able names, this means at least having a few normal characters where staff can ping you if necessary.
+.welcome  -  <a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!
 
-rule 4   -  Only advertise in the correct areas, look above in the FAQ for a list of all the advertising channels possible. Only promote in the correct areas. Please do not direct message members with any sort of promotion as that will be a ban.
+.advertise   -  You can advertise in the share category in channels like <#802427881237119016>, <#718220035797155854>, etc. Please be sure to read the <#834166540521701456> beforehand to avoid any punishments.
 
-.rule 5  -  All punishment is up to staff and if you think you were falsely punished or want to report a staff @SCC Utilities#4087. Staff can punish you at any time for any reason and have the final say.
+.topic  -  Please refrain from talking about the current topic any further. Any messages after this one regarding the topic will lead to punishments.
 
-.rule 6  -  Do not talk about self harm or suicide here. While it is important this is not the right place, if you or a friend is contemplating suicide call this number: 1-800-273-8255. Please do not post downloadable files or anything that is spyware, malware or any type of ip grabber or hack. The bots advertised in #:newspaper:〡other-ads are use at your own risk.
+.boost  -  <:SCCnitro:744273792527892570> The perks for boosting the server once are access to all premium channels usually unlocked by leveling and 1250xp. Boosting twice will give you the chance to claim a spotlight and will give you an extra 1250xp, giving you a total of 2500xp with 2 boosts.
 
-.wel  -  Welcome to the server, we hope you have a great time here!
+.respect  -  Please respect all members. Any disrespect will be appropriately punished.
 
-.topic  -  Please change the topic/discussion.
-
-.boost  -   The booster rewards are, a free growth raid, and access to all 3 premium advertising channels, along with all chat perms!
+.spotlight  -  If you want to claim a spotlight please DM me <@735200954026033286>. If you want to learn more about the spotlight, including get the spotlight role, I recommend going to <#722243860595605536>.
 
 ## Verify Command
 
