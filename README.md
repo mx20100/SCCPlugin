@@ -4,6 +4,8 @@ Hello there! This is the status change, verify and custom command plugin for SCC
 This plugin was made in collaboration with xTeen#0001 and Bobinator#4815 from the Modmail official server.
 Heres a command list.
 
+This Plugin is only to be used in SCC. No other bots are allowed to use it unless a written permission from Bobinator#4815 or mx20100#0001 has been given.
+
 ## Custom Commands
 .rules  -  Please refer back to the rules located in <#718142278656327750>.
 
