@@ -80,6 +80,12 @@ class allInOne(commands.Cog):
         await ctx.message.delete()
         await ctx.send("There are a few ways to gain xp. You can talk in chat with other members and each message you send gets you a random xp amount. You can also talk in vc to get a random amount of xp per minute of voice activity. Keep in mind there needs to be someone else in the VC with you as well. You can also earn XP via a few other ways that are stated in <#718142278656327750> and <#721530492117057536>.")
 
+    @commands.command(name="whatserver", aliases=['scc'])
+    @commands.cooldown(1, 60, commands.BucketType.user)
+    async def server_cmd(self, ctx):
+        await ctx.message.delete()
+        await ctx.send("This Server is a Community server based on Content creators such as YouTubers, Twitch streamers, Discord Server owners etc. to other content creators, share ideas, ask for help and advice, but you can also promote yourself in a variety of ad-channels.")
+
 # Verify command (not in use)
 
     @commands.command(name="verify")
