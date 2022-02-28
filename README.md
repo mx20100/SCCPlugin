@@ -25,6 +25,8 @@ This Plugin is only to be used in SCC. No other bots are allowed to use it unles
 
 .hp - There are a few ways to gain xp. You can talk in chat with other members and each message you send gets you a random xp amount. You can also talk in vc to get a random amount of xp per minute of voice activity. Keep in mind there needs to be someone else in the VC with you as well. You can also earn XP via a few other ways that are stated in <#718142278656327750> and <#721530492117057536>.
 
+.whatserver (scc) - This server is a community server based on Content creators such as YouTubers, Twitch streamers, Discord Server owners etc. You can talk to other content creators, share ideas, ask for help and advice, but you can also promote yourself in a variety of ad-channels.
+
 ## Verify Command
 
 .verify - Gives user the member role and the 4 divider roles
