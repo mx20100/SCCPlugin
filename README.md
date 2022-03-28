@@ -1,6 +1,6 @@
 # SCCPlugin
 
-Hello there! This is the status change, verify and custom command plugin for SCC. (discord.gg/Ntw83Tr)
+Hello there! This is the status change, verify and custom command plugin for SCC. (discord.gg/advertise)
 This plugin was made in collaboration with xTeen#0001 and Bobinator#4815 from the Modmail official server.
 Heres a command list.
 
