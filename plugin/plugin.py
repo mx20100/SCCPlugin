@@ -131,6 +131,10 @@ class allInOne(commands.Cog):
 
     @commands.command(name="verify")
     async def verify_cmd(self, ctx):
+        """
+        Verification command.
+        
+        Command not in use though available in case of emergency."""
         if not ctx.channel.id == 720012169567010836:
             return
         else:
