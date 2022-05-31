@@ -29,18 +29,21 @@ class allInOne(commands.Cog):
     @commands.command(name="rules", aliases=['rs'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def rules_cmd(self, ctx):
+        """Please refer back to the rules located in info."""
         await ctx.message.delete()
         await ctx.send("Please refer back to the rules located in <#718142278656327750>.")
 
     @commands.command(name="adrules", aliases=['ars'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def adrules_cmd(self, ctx):
+        """Please refer back to the advertisement rules located in adrules."""
         await ctx.message.delete()
         await ctx.send("Please refer back to the advertisement rules located in <#834166540521701456>.")
 
     @commands.command(name="welcome", aliases=['wel'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def welcome_cmd(self, ctx):
+        """Welcome to the server, we hope you have a great time here!"""
         await ctx.message.delete()
         await ctx.send("<a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!")
 
