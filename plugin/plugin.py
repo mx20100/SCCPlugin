@@ -30,56 +30,80 @@ class allInOne(commands.Cog):
     @commands.command(name="rules", aliases=['rs'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def rules_cmd(self, ctx):
-        """**Alias: `.rs`** | Please refer back to the rules located in info."""
+        """
+        **Alias: `.rs`** | Refer a member to the rules. 
+        
+        Please refer back to the rules located in info."""
         await ctx.message.delete()
         await ctx.send("Please refer back to the rules located in <#718142278656327750>.")
 
     @commands.command(name="adrules", aliases=['ars'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def adrules_cmd(self, ctx):
-        """**Alias: `.ars`** | Please refer back to the advertisement rules located in adrules."""
+        """
+        **Alias: `.ars`** | Refer a member to the ad rules.
+        
+        Please refer back to the advertisement rules located in adrules."""
         await ctx.message.delete()
         await ctx.send("Please refer back to the advertisement rules located in <#834166540521701456>.")
 
     @commands.command(name="welcome", aliases=['wel'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def welcome_cmd(self, ctx):
-        """**Alias: `.wel`** | Welcome to the server, we hope you have a great time here!"""
+        """
+        **Alias: `.wel`** | Sends a welcome message.
+        
+        Welcome to the server, we hope you have a great time here!"""
         await ctx.message.delete()
         await ctx.send("<a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!")
 
     @commands.command(name="advertise", aliases=['ad'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def advertise_cmd(self, ctx):
-        """**Alias: `.ad`** | You can advertise in the share category in channels like youtube, servers, etc. Please be sure to read the adrules beforehand to avoid any punishments."""
+        """
+        **Alias: `.ad`** | Lets members know where they can advertise.
+        
+        You can advertise in the share category in channels like youtube, servers, etc. Please be sure to read the adrules beforehand to avoid any punishments."""
         await ctx.message.delete()
         await ctx.send("You can advertise in the share category in channels like <#802427881237119016>, <#718220035797155854>, etc. Please be sure to read the <#834166540521701456> beforehand to avoid any punishments.")
 
     @commands.command(name="topic", aliases=['tp'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def topic_cmd(self, ctx):
-        """**Alias: `.tp`** | Please refrain from talking about the current topic any further. Any messages after this one regarding the topic will lead to punishments."""
+        """
+        **Alias: `.tp`** | Change conversation topic.
+         
+        Please refrain from talking about the current topic any further. Any messages after this one regarding the topic will lead to punishments."""
         await ctx.message.delete()
         await ctx.send("Please refrain from talking about the current topic any further. Any messages after this one regarding the topic will lead to punishments.")
 
     @commands.command(name="boost", aliases=['bt'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def boost_cmd(self, ctx):
-        """**Alias: `.bt`** | The perks for boosting the server once are access to all premium channels usually unlocked by leveling and 1250xp. Boosting twice will give you the chance to claim a spotlight and will give you an extra 1250xp, giving you a total of 2500xp with 2 boosts."""
+        """
+        **Alias: `.bt`** | Lets members know the perks of boosting the server.
+        
+        The perks for boosting the server once are access to all premium channels usually unlocked by leveling and 1250xp. Boosting twice will give you the chance to claim a spotlight and will give you an extra 1250xp, giving you a total of 2500xp with 2 boosts."""
         await ctx.message.delete()
         await ctx.send("<:SCCnitro:744273792527892570> The perks for boosting the server once are access to all premium channels usually unlocked by leveling and 1250xp. Boosting twice will give you the chance to claim a spotlight and will give you an extra 1250xp, giving you a total of 2500xp with 2 boosts.")
 
     @commands.command(name="respect", aliases=['rp'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def respect_cmd(self, ctx):
-        """**Alias: `.rp`** | Please respect all members. Any disrespect will be appropriately punished."""
+        """
+        **Alias: `.rp`** | Use this snippet when someone is being disrespectful.
+        
+        Please respect all members. Any disrespect will be appropriately punished."""
         await ctx.message.delete()
         await ctx.send("Please respect all members. Any disrespect will be appropriately punished.")
 
     @commands.command(name="spotlight", aliases=['sp'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def spotlight_cmd(self, ctx):
-        """**Alias: `.sp`** | If you want to claim a spotlight please DM me SCC Utilities. If you want to learn more about the spotlight, including get the spotlight role, I recommend going to Spotlight."""
+        """
+        **Alias: `.sp`** | Lets members know how to claim a spotlight.
+        
+        If you want to claim a spotlight please DM me SCC Utilities. If you want to learn more about the spotlight, including get the spotlight role, I recommend going to Spotlight."""
         await ctx.message.delete()
         await ctx.send("If you want to claim a spotlight please DM me <@735200954026033286>. If you want to learn more about the spotlight, including get the spotlight role, I recommend going to <#722243860595605536>.")
 
@@ -96,7 +120,10 @@ class allInOne(commands.Cog):
     @commands.command(name="whatserver", aliases=['scc'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def server_cmd(self, ctx):
-        """**Alias: `.scc`** | This server is a community server based on Content creators such as YouTubers, Twitch streamers, Discord Server owners etc. You can talk to other content creators, share ideas, ask for help and advice, but you can also promote yourself in a variety of ad-channels."""
+        """
+        **Alias: `.scc`** | Let members know what the server is about.
+        
+        This server is a community server based on Content creators such as YouTubers, Twitch streamers, Discord Server owners etc. You can talk to other content creators, share ideas, ask for help and advice, but you can also promote yourself in a variety of ad-channels."""
         await ctx.message.delete()
         await ctx.send("This server is a community server based on Content creators such as YouTubers, Twitch streamers, Discord Server owners etc. You can talk to other content creators, share ideas, ask for help and advice, but you can also promote yourself in a variety of ad-channels.")
 
