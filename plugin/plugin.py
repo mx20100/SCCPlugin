@@ -63,7 +63,17 @@ class allInOne(commands.Cog):
         """
         **Alias: `.ad`** | Lets members know where they can advertise.
         
-        You can advertise in the share category in channels like youtube, servers, etc. Please be sure to read the adrules beforehand to avoid any punishments."""
+        To advertise we would kindly like to direct you to ad_rules before advertising in one of the following channels:
+collab
+looking_for_partner
+premium-ads
+youtube
+twitch
+servers
+tiktok
+music
+other-ads
+Please be sure to double check in which channel you are posting an ad, as posting it in the wrong channel can lead to punishments. You can see what you are and aren't allowed to post in each channel by looking at the description of the channel."""
         await ctx.message.delete()
         await ctx.send("""To advertise we would kindly like to direct you to <#834166540521701456> before advertising in one of the following channels:
 <#718172443033731312>
