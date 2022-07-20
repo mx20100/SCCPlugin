@@ -65,7 +65,17 @@ class allInOne(commands.Cog):
         
         You can advertise in the share category in channels like youtube, servers, etc. Please be sure to read the adrules beforehand to avoid any punishments."""
         await ctx.message.delete()
-        await ctx.send("You can advertise in the share category in channels like <#802427881237119016>, <#718220035797155854>, etc. Please be sure to read the <#834166540521701456> beforehand to avoid any punishments.")
+        await ctx.send("""To advertise we would kindly like to direct you to <#834166540521701456> before advertising in one of the following channels:
+<#718172443033731312>
+<#894564503663022150>
+<#718165890784428132>
+<#802427881237119016>
+<#802428054970040321>
+<#718220035797155854>
+<#916647553901154394>
+<#977247609712431204>
+<#720712592812671057>
+Please be sure to double check in which channel you are posting an ad, as posting it in the wrong channel can lead to punishments. You can see what you are and aren't allowed to post in each channel by looking at the description of the channel.""")
 
     @commands.command(name="topic", aliases=['tp'])
     @commands.cooldown(1, 60, commands.BucketType.user)
