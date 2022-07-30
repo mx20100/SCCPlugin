@@ -63,9 +63,9 @@ class allInOne(commands.Cog):
         """
         **Alias: `.ad`** | Lets members know where they can advertise.
         
-        You can advertise in the share category in channels like youtube, servers, etc. Please be sure to read the adrules beforehand to avoid any punishments."""
+        Sends a gif showing where to advertise."""
         await ctx.message.delete()
-        await ctx.send("You can advertise in the share category in channels like <#802427881237119016>, <#718220035797155854>, etc. Please be sure to read the <#834166540521701456> beforehand to avoid any punishments.")
+        await ctx.send("https://cdn.discordapp.com/attachments/973685196513771590/1002832635946610768/IMG_7133.gif")
 
     @commands.command(name="topic", aliases=['tp'])
     @commands.cooldown(1, 60, commands.BucketType.user)
