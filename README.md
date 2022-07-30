@@ -13,7 +13,7 @@ This Plugin is only to be used in SCC. No other bots are allowed to use it unles
 
 .welcome (wel) -  <a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!
 
-.advertise (ad) -  You can advertise in the share category in channels like <#802427881237119016>, <#718220035797155854>, etc. Please be sure to read the <#834166540521701456> beforehand to avoid any punishments.
+.advertise (ad) -  Sends a gif with the explanation where to advertise https://cdn.discordapp.com/attachments/973685196513771590/1002832635946610768/IMG_7133.gif
 
 .topic (tp) -  Please refrain from talking about the current topic any further. Any messages after this one regarding the topic will lead to punishments.
 
