@@ -35,7 +35,7 @@ class allInOne(commands.Cog):
         
         Please refer back to the rules located in info."""
         await ctx.message.delete()
-        await ctx.send("Please refer back to the rules located in <#718142278656327750>.")
+        await ctx.send("Please refer back to the rules located in <#1006215300972281967>.")
 
     @commands.command(name="adrules", aliases=['ars'])
     @commands.cooldown(1, 60, commands.BucketType.user)
@@ -45,7 +45,7 @@ class allInOne(commands.Cog):
         
         Please refer back to the advertisement rules located in adrules."""
         await ctx.message.delete()
-        await ctx.send("Please refer back to the advertisement rules located in <#834166540521701456>.")
+        await ctx.send("Please refer back to the advertisement rules located in <#1006220475455787049>.")
 
     @commands.command(name="welcome", aliases=['wel'])
     @commands.cooldown(1, 60, commands.BucketType.user)
@@ -105,7 +105,7 @@ class allInOne(commands.Cog):
         
         If you want to claim a spotlight please DM me SCC Utilities. If you want to learn more about the spotlight, including get the spotlight role, I recommend going to Spotlight."""
         await ctx.message.delete()
-        await ctx.send("If you want to claim a spotlight please DM me <@735200954026033286>. If you want to learn more about the spotlight, including get the spotlight role, I recommend going to <#722243860595605536>.")
+        await ctx.send("If you want to claim a spotlight please DM me <@845958508041076786>. If you want to learn more about the spotlight, including get the spotlight role, I recommend going to <#1006231434417156228>.")
 
     @commands.command(name="hp")
     @commands.cooldown(1, 60, commands.BucketType.user)
@@ -115,7 +115,7 @@ class allInOne(commands.Cog):
 
         There are a few ways to gain xp. You can talk in chat with other members and each message you send gets you a random xp amount. You can also talk in vc to get a random amount of xp per minute of voice activity. Keep in mind there needs to be someone else in the VC with you as well. You can also earn XP via a few other ways that are stated in info and index."""
         await ctx.message.delete()
-        await ctx.send("There are a few ways to gain xp. You can talk in chat with other members and each message you send gets you a random xp amount. You can also talk in vc to get a random amount of xp per minute of voice activity. Keep in mind there needs to be someone else in the VC with you as well. You can also earn XP via a few other ways that are stated in <#718142278656327750> and <#721530492117057536>.")
+        await ctx.send("There are a few ways to gain xp. You can talk in chat with other members and each message you send gets you a random xp amount. You can also talk in vc to get a random amount of xp per minute of voice activity. Keep in mind there needs to be someone else in the VC with you as well. You can also earn XP via a few other ways that are stated in <#1006215300972281967> and <#1006215048089325628>.")
 
     @commands.command(name="whatserver", aliases=['scc'])
     @commands.cooldown(1, 60, commands.BucketType.user)
