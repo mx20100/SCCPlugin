@@ -65,7 +65,7 @@ class allInOne(commands.Cog):
         
         Sends a gif showing where to advertise."""
         await ctx.message.delete()
-        await ctx.send("https://cdn.discordapp.com/attachments/973685196513771590/1002832635946610768/IMG_7133.gif")
+        await ctx.send("https://cdn.discordapp.com/attachments/973685196513771590/1030902387159871508/IMG_8272.gif")
 
     @commands.command(name="topic", aliases=['tp'])
     @commands.cooldown(1, 60, commands.BucketType.user)
