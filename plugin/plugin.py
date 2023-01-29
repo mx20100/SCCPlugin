@@ -1,7 +1,6 @@
 import discord
-from discord.ext import commands, tasks
+from discord.ext import commands
 import asyncio
-from datetime import datetime
 
 class allInOne(commands.Cog):
     def __init__(self, bot):
@@ -9,24 +8,25 @@ class allInOne(commands.Cog):
         self.color = 0x7289da
         self.timer = 10
 
-    @tasks.loop(seconds=10)
-    async def loopy(self):
+    @commands.Cog.listener()
+    async def on_ready(self):
+        await self.update_status()
+
+    async def update_status(self):
+        await self.bot.wait_until_ready()
         guild = self.bot.get_guild(717859817032515755)
-        await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"SCC | DM For Help | {guild.member_count} Members"))
-        await asyncio.sleep(5)
+        while not self.bot.is_closed():
+            await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"SCC | DM For Help | {guild.member_count} Members"))
+            await asyncio.sleep(5)
 
     @commands.command(name="start_status")
     async def start_the_status(self, ctx):
         """Restarts the bot status loop"""
-        self.loopy.start()
+        self.update_status.start()
         await ctx.send("Started! If you are encountering any issues please run this command again!")
 
-    #Chat snippets
+    # Chat snippets
     
-    #commands.BucketType.user for user
-    #commands.BucketType.guild for server
-    # change the "10" to whatever time
-
     @commands.command(name="rules", aliases=['rs'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def rules_cmd(self, ctx):
@@ -126,57 +126,3 @@ class allInOne(commands.Cog):
         This server is a community server based on Content creators such as YouTubers, Twitch streamers, Discord Server owners etc. You can talk to other content creators, share ideas, ask for help and advice, but you can also promote yourself in a variety of ad-channels."""
         await ctx.message.delete()
         await ctx.send("This server is a community server based on Content creators such as YouTubers, Twitch streamers, Discord Server owners etc. You can talk to other content creators, share ideas, ask for help and advice, but you can also promote yourself in a variety of ad-channels.")
-
-# Verify command (not in use)
-
-    @commands.command(name="verify")
-    async def verify_cmd(self, ctx):
-        """
-        Verification command.
-        
-        Command not in use, though available in case of emergency."""
-        if not ctx.channel.id == 720012169567010836:
-            return
-        else:
-            await ctx.message.add_reaction("✅")
-            await asyncio.sleep(3)
-            await ctx.message.delete()
-            # Verify roles
-            role1 = ctx.guild.get_role(718174958936653884)
-            role2 = ctx.guild.get_role(726859506339938365)
-            role3 = ctx.guild.get_role(725807695990358057)
-            role4 = ctx.guild.get_role(726853712320004227)
-            role5 = ctx.guild.get_role(726862277965512816)
-            # Add the role
-            await ctx.author.add_roles(role1, role2, role3, role4, role5)
-            # Send the log msg
-            log_channel = ctx.guild.get_channel(758759424235405312)
-            embed = discord.Embed(
-                title="Someone just verified!",
-                description=f"**{ctx.author}** just verified!\n\nTheir ID is: {ctx.author.id}\nTheir name is: {ctx.author.name}\nTheir discriminator is: {ctx.author.discriminator}\n\nThe message ID is: {ctx.message.id}\nThe channel ID is: {ctx.message.channel.id}\n\nMessage was sent at {datetime.utcnow()} UTC",
-                color=self.color,
-                timestamp=ctx.message.created_at
-            )
-            await log_channel.send(embed=embed)
-
-    @commands.Cog.listener()
-    async def on_message(self, message):
-        if message.channel.id == 720012169567010836:
-            if message.content.lower() == ".verify":
-                return
-            if message.author.id != 735200954026033286: # The Bot ID
-                await message.delete()
-            else:
-                return
-        else:
-            return
-    
-    @welcome_cmd.error
-    async def wel_cmd_error(self, ctx, error):
-        if isinstance(error, commands.CommandOnCooldown):
-            await ctx.message.add_reaction("<:SCCtimer:754060791455416321>")
-        else:
-            raise error
-    
-def setup(bot):
-    bot.add_cog(allInOne(bot))
