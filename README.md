@@ -1,3 +1,5 @@
+##No longer in use.
+
 # SCCPlugin
 
 Hello there! This is the status change, verify and custom command plugin for SCC. (discord.gg/advertise)
