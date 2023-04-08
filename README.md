@@ -1,4 +1,4 @@
-##No longer in use.
+# Incompatible with latest modmail versions.
 
 # SCCPlugin
 
